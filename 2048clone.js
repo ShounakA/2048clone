@@ -289,8 +289,10 @@ function findPairDown(board) {
 	return success;
 }
 function getColor(value){
-    let h = (1-value%255)*360;
+    let length = Math.log(value) * Math.LOG10E + 1|0;
+    let toDivide = 10*length;
+    let h = (value/toDivide)*360;
     let s = 100;
-    let l = value*50;
+    let l = value/toDivide*50;
     return [h,s,l];
 }
