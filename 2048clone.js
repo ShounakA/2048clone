@@ -1,4 +1,4 @@
-var gameSize=4;
+var gameSize=10;
 var tileModel = [];
 var starterChoices = [2,2,2,4];
 var tilesToSpawn=0;
